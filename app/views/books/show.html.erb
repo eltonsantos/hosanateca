@@ -1,8 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @book.name %>
+  <strong>Picture:</strong>
+  <% if @book.picture.attached? %>
+    <%= image_tag @book.picture %>
+  <% end %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
 </p>
 
 <p>
