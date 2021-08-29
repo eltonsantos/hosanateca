@@ -8,7 +8,7 @@
 
 30.times do
   book = Book.create(
-    picture: Faker::LoremFlickr.image,
+    picture: File.open(File.join(Rails.root, "react.jpg")),
     title: Faker::Book.title,
     author: Faker::Book.author,
     description: Faker::Lorem.paragraph,
