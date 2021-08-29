@@ -8,7 +8,7 @@
 
 30.times do
   book = Book.create(
-    # picture: Faker::LoremFlickr.image,
+    picture: Faker::LoremFlickr.image,
     title: Faker::Book.title,
     author: Faker::Book.author,
     description: Faker::Lorem.paragraph,

@@ -27,7 +27,8 @@ gem 'image_processing', '~> 1.2'
 
 # Installed gems
 gem 'simple_form'
-gem 'kaminari'
+gem 'kaminari', :git => 'https://github.com/kaminari/kaminari'
+gem 'bootstrap5-kaminari-views'
 gem 'cancancan'
 gem 'devise'
 gem 'faker'
