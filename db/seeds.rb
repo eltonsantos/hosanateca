@@ -1,6 +1,7 @@
 require 'faker'
 require 'open-uri'
 
+# FAKER PARA IMAGEM FIXA
 # if Book.count.zero?
 #   10.times do
 #     book = Book.create(
@@ -16,6 +17,7 @@ require 'open-uri'
 #   end
 # end
 
+# FAKER PARA IMAGENS DINÂMICAS
 def image_fetcher
   URI.open(Faker::Avatar.image)
   rescue
